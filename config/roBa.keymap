@@ -2,6 +2,7 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
+#include <dt-bindings/zmk/pointing.h>
 
 #define MOUSE 4
 #define SCROLL 5
@@ -67,10 +68,10 @@
 
         default_layer {
             bindings = <
-&kp Q      &kp W         &kp E         &kp R                        &kp T                                                            &kp Y        &kp U  &kp I      &kp O      &kp P
-&kp A      &kp S         &kp D         &kp F                        &kp G        &kp LS(LG(S))                      &kp EXCLAMATION  &kp H        &kp J  &kp K      &kp L      &kp DELETE
-&kp Z      &kp X         &kp C         &kp V                        &kp B        &kp AT_SIGN                        &kp QUESTION     &kp N        &kp M  &mkp LCLK  &mkp RCLK  &kp ENTER
-&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 6 INT_HENKAN  &lt 2 SPACE  &lt_to_layer_0 3 INT_MUHENKAN      &kp BACKSPACE    &lt 1 ENTER                               &kp RSHIFT
+&kp Q      &kp W         &kp E         &kp R                        &kp T                                                                   &kp Y           &kp U  &kp I      &kp O      &kp P
+&kp A      &kp S         &kp D         &kp F                        &kp G                   &kp LS(LG(S))                  &kp EXCLAMATION  &kp H           &kp J  &kp K      &kp L      &kp DELETE
+&kp Z      &kp X         &kp C         &kp V                        &kp B                   &kp AT_SIGN                    &kp QUESTION     &kp N           &kp M  &mkp LCLK  &mkp RCLK  &kp ENTER
+&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 1 INT_HENKAN  &lt_to_layer_0 2 SPACE  &lt_to_layer_0 6 INT_KANA      &msc SCRL_UP     &msc SCRL_DOWN                               &kp RSHIFT
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
