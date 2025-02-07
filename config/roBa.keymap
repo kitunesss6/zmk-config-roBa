@@ -2,7 +2,6 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
-#include <dt-bindings/zmk/pointing.h>
 
 #define MOUSE 4
 #define SCROLL 5
@@ -68,10 +67,10 @@
 
         normal {
             bindings = <
-&kp LS(LG(NUMBER_4))  &kp W         &kp E          &kp R        &kp T                                                        &kp Y      &kp U  &kp I      &kp O           &kp P
-&kp A                 &kp S         &kp D          &kp F        &kp G       &kp KP_NUMLOCK            &kp LG(RIGHT_BRACKET)  &kp H      &kp J  &kp K      &msc SCRL_UP    &kp BACKSPACE
-&kp Z                 &kp C         &kp V          &kp B        &kp COMMA   &kp PERIOD                &kp LG(LEFT_BRACKET)   &kp N      &kp M  &mkp LCLK  &msc SCRL_DOWN  &kp ENTER
-&lt 2 SPACE           &kp LEFT_WIN  &kp RIGHT_ALT  &lt 1 SPACE  &kp LSHIFT  &kp LS(LG(NUMBER_3))      &kp CAPSLOCK           &kp SPACE                                    &lt 2 SPACE
+&kp LS(LG(NUMBER_4))  &kp W         &kp E          &kp R        &kp T                                                        &kp Y      &kp U  &kp I      &kp O      &kp P
+&kp A                 &kp S         &kp D          &kp F        &kp G       &kp KP_NUMLOCK            &kp LG(RIGHT_BRACKET)  &kp H      &kp J  &kp K      &lt 3 L    &kp BACKSPACE
+&kp Z                 &kp C         &kp V          &kp B        &kp COMMA   &kp PERIOD                &kp LG(LEFT_BRACKET)   &kp N      &kp M  &mkp LCLK  &mkp RCLK  &kp ENTER
+&lt 2 SPACE           &kp LEFT_WIN  &kp RIGHT_ALT  &lt 1 SPACE  &kp LSHIFT  &kp LS(LG(NUMBER_3))      &kp CAPSLOCK           &kp SPACE                               &lt 2 SPACE
             >;
 
             sensor-bindings = <&inc_dec_kp RG(LEFT_BRACKET) RG(RIGHT_BRACKET)>;
@@ -90,19 +89,19 @@
             bindings = <
 &kp Q             &trans  &trans  &trans  &trans                                                            &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp C_VOL_DN  &kp C_VOLUME_UP  &kp RIGHT
 &trans            &trans  &trans  &trans  &trans                &trans                     &kp EXCLAMATION  &kp AT_SIGN           &trans                &trans        &kp L            &kp LEFT_ARROW
-&kp C_PLAY_PAUSE  &kp X   &trans  &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS      &kp QUESTION     &kp SLASH             &mkp RCLK             &trans        &trans           &kp MINUS
+&kp C_PLAY_PAUSE  &kp X   &trans  &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS      &kp QUESTION     &kp SLASH             &mkp RCLK             &trans        &mkp RCLK        &kp MINUS
 &trans            &trans  &trans  &trans  &trans                &trans                     &kp UP_ARROW     &kp DOWN_ARROW                                                             &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
         };
 
-        other3 {
+        scroll {
             bindings = <
-&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                      &trans  &trans  &trans  &trans  &trans
-&trans        &trans        &trans        &trans        &trans        &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans        &trans        &trans        &trans        &trans        &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans        &trans        &trans        &trans        &trans        &trans      &trans  &trans                          &trans
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
             >;
         };
 
