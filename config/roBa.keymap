@@ -88,8 +88,8 @@
         SHIFT2 {
             bindings = <
 &kp Q             &trans  &trans  &trans  &trans                                                            &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp C_VOL_DN  &kp C_VOLUME_UP  &kp RIGHT
-&trans            &trans  &trans  &trans  &trans                &trans                     &kp EXCLAMATION  &kp AT_SIGN           &trans                &trans        &kp L            &kp LEFT_ARROW
-&kp C_PLAY_PAUSE  &kp X   &trans  &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS      &kp QUESTION     &kp SLASH             &mkp RCLK             &trans        &mkp RCLK        &kp MINUS
+&trans            &trans  &trans  &trans  &trans                &trans                     &kp EXCLAMATION  &kp AT_SIGN           &trans                &trans        &kp UP_ARROW     &kp LEFT_ARROW
+&kp C_PLAY_PAUSE  &kp X   &trans  &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS      &kp QUESTION     &kp SLASH             &trans                &trans        &kp DOWN_ARROW   &kp MINUS
 &trans            &trans  &trans  &trans  &trans                &trans                     &kp UP_ARROW     &kp DOWN_ARROW                                                             &trans
             >;
 
@@ -116,10 +116,10 @@
 
         SCROLL {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans                 &trans                 &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &kp RG(RIGHT_BRACKET)  &kp RG(RIGHT_BRACKET)  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &kp RG(LEFT_BRACKET)   &kp RG(LEFT_BRACKET)   &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                                        &trans
             >;
         };
 
