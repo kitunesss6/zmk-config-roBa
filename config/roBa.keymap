@@ -70,7 +70,7 @@
 &kp Q                 &kp W         &kp E          &kp R        &kp T                                               &kp Y      &kp U  &kp I      &kp O      &kp P
 &kp A                 &kp S         &kp D          &kp F        &kp COMMA   &kp KP_NUMLOCK            &kp G         &kp H      &kp J  &kp K      &lt 5 L    &kp BACKSPACE
 &kp Z                 &kp X         &kp C          &kp V        &kp PERIOD  &kp C_PP                  &kp B         &kp N      &kp M  &mkp LCLK  &mkp RCLK  &kp ENTER
-&to_layer_0 NUMBER_2  &kp LEFT_WIN  &kp RIGHT_ALT  &lt 1 SPACE  &kp LSHIFT  &kp LS(LG(NUMBER_4))      &kp CAPSLOCK  &kp SPACE                               &to_layer_0 NUMBER_2
+&to_layer_0 NUMBER_2  &kp LEFT_WIN  &kp RIGHT_ALT  &lt 1 SPACE  &kp LSHIFT  &kp LS(LG(NUMBER_4))      &kp CAPSLOCK  &kp SPACE                               &lt_to_layer_0 2 MINUS
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
